@@ -20,9 +20,20 @@ nav {
     justify-content: space-between;
 }
 
-nav h1 {
-    height: 32px;
+nav .logo {
     margin-left: 24px;
+}
+
+nav .logo h1 {
+    height: 32px;
+    margin: 0;
+    display: inline;
+    margin-left: 0;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-left: 32px;
 }
 
 nav ul {
@@ -54,6 +65,47 @@ header .content button {
     width: 100%;
     padding: 8px 0;
     background-color: rgb(108, 106, 106);
+}
+
+main {
+    display: flex;
+}
+
+main .right_info {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+main .right_info img {
+    width: 100%;
+}
+
+main .right_info .info_content h1 {
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+main .left_info {
+    width: 40%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+main .left_info img {
+    width: 35%;
+    height: auto;
+    margin: 16px 16px;
+}
+
+main .left_info .info_flex .info_text {
+    width: 65%;
+    padding: 8px;
+    color: gray;
+}
+
+main .left_info .info_flex {
+    display: flex;
 }
 
 @media only screen and (max-width:680px) {
@@ -92,5 +144,22 @@ header .content button {
     }
     header .content button {
         margin-bottom: 32px;
+    }
+    main .right_info {
+        display: none;
+    }
+    main .left_info {
+        width: 100%;
+    }
+    main .left_info img {
+        width: auto;
+    }
+    main .left_info .info_flex {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0 16px 16px;
+    }
+    main .left_info .info_flex .info_text {
+        margin-left: 16px;
     }
 }
