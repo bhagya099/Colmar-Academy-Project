@@ -29,11 +29,15 @@ nav .logo h1 {
     margin: 0;
     display: inline;
     margin-left: 0;
+    font-size: 14px;
 }
 
 nav .logo img {
     height: 40px;
     margin-left: 32px;
+    position: relative;
+    top: 17px;
+    left: 7px;
 }
 
 nav ul {
@@ -71,6 +75,10 @@ main {
     display: flex;
 }
 
+.mobile {
+    display: none;
+}
+
 main .right_info {
     width: 60%;
     margin: 32px 24px;
@@ -98,14 +106,49 @@ main .left_info img {
     margin: 16px 16px;
 }
 
-main .left_info .info_flex .info_text {
+.info_text {
     width: 65%;
     padding: 8px;
     color: gray;
 }
 
-main .left_info .info_flex {
+.info_flex {
     display: flex;
+}
+
+section {
+    background-color: grey;
+}
+
+section h3 {
+    text-align: center;
+    padding: 32px;
+}
+
+section .cards {
+    margin: 32px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .cards .first_card {
+    margin-left: 32px;
+    flex: 0 1 30%;
+    margin-bottom: 32px;
+    background-color: rgb(237, 233, 233);
+}
+
+section .cards img {
+    width: 100%;
+    height: auto;
+}
+
+.card_text {
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding: 8px;
 }
 
 @media only screen and (max-width:680px) {
@@ -145,21 +188,26 @@ main .left_info .info_flex {
     header .content button {
         margin-bottom: 32px;
     }
-    main .right_info {
+    main .right_info,
+    .desktop {
         display: none;
     }
     main .left_info {
         width: 100%;
     }
+    main .mobile {
+        display: inline;
+    }
     main .left_info img {
         width: auto;
     }
-    main .left_info .info_flex {
+    .info_flex {
         display: flex;
         flex-direction: column;
         margin: 16px 0 16px 16px;
     }
-    main .left_info .info_flex .info_text {
+    .info_text {
         margin-left: 16px;
+        font-size: 12px;
     }
 }
