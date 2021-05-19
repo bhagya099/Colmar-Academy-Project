@@ -116,8 +116,12 @@ main .left_info img {
     display: flex;
 }
 
+.card_mobile {
+    display: none;
+}
+
 section {
-    background-color: grey;
+    background-color: rgb(203, 202, 202);
 }
 
 section h3 {
@@ -129,12 +133,12 @@ section .cards {
     margin: 32px 72px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 section .cards .first_card {
     margin-left: 32px;
-    flex: 0 1 30%;
+    flex: 1 1 30%;
     margin-bottom: 32px;
     background-color: rgb(237, 233, 233);
 }
@@ -209,5 +213,25 @@ section .cards img {
     .info_text {
         margin-left: 16px;
         font-size: 12px;
+    }
+    .card_desktop {
+        display: none;
+    }
+    .card_mobile {
+        display: inline;
+    }
+    .card_mobile h3 {
+        margin-top: 32px;
+    }
+    .card_mobile ul {
+        list-style-type: none;
+        margin-top: 16px;
+    }
+    .card_mobile .style_list {
+        background-color: rgb(169, 169, 169);
+        margin-bottom: 8px;
+        margin-right: 16px;
+        padding: 16px 16px 24px 16px;
+        text-align: left;
     }
 }
