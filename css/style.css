@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
+h3 {
+    text-align: center;
+    padding: 32px;
+}
+
 .mob_nav {
     display: none;
 }
@@ -79,7 +84,7 @@ main {
     display: none;
 }
 
-main .right_info {
+.right_info {
     width: 60%;
     margin: 32px 24px;
 }
@@ -88,19 +93,22 @@ main .right_info img {
     width: 100%;
 }
 
-main .right_info .info_content h1 {
+.right_info .info_content h1 {
     margin-bottom: 24px;
     margin-left: 24px;
+}
+
+.right_info .info_content p {
     margin-bottom: 32px;
 }
 
-main .left_info {
+.left_info {
     width: 40%;
     margin-top: 32px;
     margin-bottom: 32px;
 }
 
-main .left_info img {
+.left_info img {
     width: 35%;
     height: auto;
     margin: 16px 16px;
@@ -122,11 +130,6 @@ main .left_info img {
 
 section {
     background-color: rgb(203, 202, 202);
-}
-
-section h3 {
-    text-align: center;
-    padding: 32px;
 }
 
 section .cards {
@@ -155,9 +158,38 @@ section .cards img {
     padding: 8px;
 }
 
+.thesis_mobile {
+    display: none;
+}
+
+.thesis {
+    display: flex;
+}
+
+.right_info video {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 24px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
 @media only screen and (max-width:680px) {
     nav {
         display: none;
+    }
+    h3 {
+        margin-top: 32px;
     }
     .mob_nav {
         height: 64px;
@@ -220,9 +252,6 @@ section .cards img {
     .card_mobile {
         display: inline;
     }
-    .card_mobile h3 {
-        margin-top: 32px;
-    }
     .card_mobile ul {
         list-style-type: none;
         margin-top: 16px;
@@ -233,5 +262,18 @@ section .cards img {
         margin-right: 16px;
         padding: 16px 16px 24px 16px;
         text-align: left;
+    }
+    .thesis_desktop {
+        display: none;
+    }
+    .thesis_mobile {
+        display: inline;
+    }
+    .thesis_mobile video {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+    footer ul {
+        display: none;
     }
 }
